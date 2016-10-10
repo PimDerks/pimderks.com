@@ -1,0 +1,29 @@
+/*------------------------------------*\
+    #BREAKPOINTS-SETTINGS
+\*------------------------------------*/
+
+// Note: also used in JS for breakpoints.js
+$breakpoints:(
+    xs: 20em,   // 320
+    s:  30em,   // 480
+    m:  48em,   // 768
+    l:  60em,   // 960
+    xl: 80); // 1280
+
+/**
+ * Z-index management
+ * @author Hugo Giraudel
+ * @link http://www.sitepoint.com/better-solution-managing-z-index-sass/
+*/
+
+@function get-breakpoint($name) {
+
+    $bp: map-get($breakpoints, $name);
+
+    @if not $bp {
+        @error 'No value found for `#{$name}`. Please make sure it is defined in `$breakpoints` map.';
+    }
+
+    @return $bp;
+
+}

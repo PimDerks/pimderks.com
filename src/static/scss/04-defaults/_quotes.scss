@@ -1,0 +1,44 @@
+/*------------------------------------*\
+    #QUOTES
+\*------------------------------------*/
+
+blockquote {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 3.2rem -4.5rem;
+    max-width: 20em;
+}
+
+blockquote p {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0;
+    quotes: '\201C' '\201D' '\2018' '\2019';
+
+    cite {
+        font-style: normal;
+    }
+
+    p {
+
+    }
+
+    p:first-of-type {
+        &::before {
+            content: open-quote;
+        }
+    }
+
+    p:last-of-type {
+        &::after {
+            content: close-quote;
+        }
+    }
+
+}

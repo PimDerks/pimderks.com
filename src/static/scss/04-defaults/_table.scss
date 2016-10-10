@@ -1,0 +1,39 @@
+/*------------------------------------*\
+    #TABLES
+\*------------------------------------*/
+
+/**
+ * 1. Ensure tables fill up as much space as possible.
+ */
+
+table {
+    border-collapse: collapse;
+    margin-bottom: baseline(1);
+    table-layout: fixed;
+    text-align: left;
+    width: 100%; /* [1] */
+
+    caption {
+        font-weight: 700;
+        font-size: 1em;
+    }
+
+    th,
+    td {
+        vertical-align: top;
+        padding: baseline(.5);
+    }
+
+    th {
+        font-weight: 700;
+    }
+
+    tbody {
+
+        tr:nth-child(odd) {
+            background: get-color('light-grey');
+        }
+
+    }
+
+}

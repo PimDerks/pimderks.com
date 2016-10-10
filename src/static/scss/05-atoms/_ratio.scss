@@ -1,0 +1,36 @@
+/*------------------------------------*\
+    #RATIO
+\*------------------------------------*/
+
+.a-ratio {
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  > * {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+}
+
+// defaults
+@each $antecedent, $consequent in $ratios {
+
+  @if (type-of($antecedent) != number) {
+    @error "`#{$antecedent}` needs to be a number."
+  }
+
+  @if (type-of($consequent) != number) {
+    @error "`#{$consequent}` needs to be a number."
+  }
+
+  .a-ratio--#{$antecedent}\:#{$consequent} {
+    padding-bottom: ($consequent/$antecedent) * 100%;
+  }
+
+}

@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    #MARGINS
+\*------------------------------------*/
+// scss-lint:disable SelectorFormat
+
+.u-mb {
+    margin-bottom: baseline(1);
+}
+
+.u-mb\+ {
+    margin-bottom: baseline(2);
+}
+
+.u-mb\+\+ {
+    margin-bottom: baseline(3);
+}

@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    #LIST-BORDER
+\*------------------------------------*/
+
+/**
+* The list-border object adds a border to every list-item.
+*/
+
+@mixin list-border {
+
+    > li {
+        border-top: 1px solid currentColor;
+        padding-bottom: baseline(1);
+        padding-top: baseline(2);
+
+        &:last-child {
+            border-bottom: 1px solid currentColor;
+        }
+
+    }
+
+}
+
+.a-list-border {
+    @include list-border;
+}

@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    #MEDIA
+\*------------------------------------*/
+
+.o-media {
+  overflow: hidden;
+
+  .o-media__img {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .o-media__body {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+  }
+
+}

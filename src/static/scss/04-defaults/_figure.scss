@@ -1,0 +1,26 @@
+
+figure {
+  margin-bottom: baseline(1);
+  position: relative;
+  border: baseline(.5) solid white;
+
+  figcaption {
+    background: rgba(black, .75);
+    color: white;
+    font-size: .75rem;
+    opacity: .5;
+    padding: baseline(.5);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &:hover figcaption {
+    opacity: 1;
+  }
+
+  img {
+    margin-bottom: 0;
+  }
+
+}

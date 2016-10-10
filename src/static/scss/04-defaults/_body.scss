@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    #BODY
+\*------------------------------------*/
+
+/**
+ * Simple page-level setup.
+ *
+ * 1. Hide horizontal overflow.
+ * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
+ *    navigating between pages that do/do not have enough content to produce
+ *    scrollbars naturally.
+ * 3. Ensure the page always fills at least the entire height of the viewport.
+ */
+
+body {
+  background-color: #F6F6F6;
+  font-family: Neuton;
+  color: rgba(black, .65);
+  overflow-x: hidden; /* [1] */
+  overflow-y: scroll; /* [2] */
+  min-height: 100%; /* [3] */
+}

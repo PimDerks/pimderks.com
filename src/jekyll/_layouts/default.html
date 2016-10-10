@@ -1,0 +1,34 @@
+{% include document/document-open.html %}
+
+{% include document/document-head.html %}
+
+<body>
+
+<div class="site">
+  {% include layout/header.html %}
+
+  <div class="page">
+
+    {% include components/page-header.html %}
+
+    <main class="page-content">
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+
+      {% include components/blog-navigation.html %}
+
+      {% include components/copyright.html %}
+
+    </main>
+
+    {% include components/page-footer.html %}
+
+  </div>
+
+  {% include layout/footer.html %}
+
+</div>
+
+{% include document/document-scripts.html %}
+
+{% include document/document-close.html %}

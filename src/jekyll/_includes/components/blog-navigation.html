@@ -1,0 +1,24 @@
+{% assign posts = site.posts | sort: 'date' %}
+{% for post in posts %}
+    {% if post.title == page.title %}
+        {% assign currentIndex = forloop.index0 %}
+    {% endif %}
+{% endfor %}
+
+{% if currentIndex %}
+
+<nav class="article-nav">
+    {% assign nextIndex = currentIndex|plus:1 %}
+    {% if nextIndex >= 0 and posts[nextIndex] %}
+        {% assign next = posts[nextIndex] %}
+        <p>Next article: <br /><a href="{{ next.url }}">{{ next.title }}</a> </p>
+    {% endif %}
+
+    {% assign prevIndex = currentIndex|minus:1 %}
+    {% if prevIndex >= 0 and posts[prevIndex] %}
+        {% assign prev = posts[prevIndex] %}
+        <p>Previous article: <br /><a href="{{ prev.url }}">{{ prev.title }}</a></p>
+    {% endif %}
+</nav>
+
+{% endif %}

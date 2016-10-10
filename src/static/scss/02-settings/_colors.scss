@@ -1,0 +1,21 @@
+// Color definitions
+
+$colors: (
+  'brand':      #eb0064,
+  'black':      #323232,
+  'white':      #FFFFFF,
+  'grey':       #666666,
+  'light-grey': #F1F1F1
+);
+
+// Helper
+
+@function get-color($name) {
+  @if map-has-key($colors, $name){
+    @return map-get($colors, $name);
+  } @else {
+    @error 'Color #{$name} not found in $colors';
+  }
+}
+
+// Color usage. Do not use direct references to $colors in your code.

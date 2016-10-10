@@ -1,0 +1,13 @@
+.a-container {
+  margin: 0 auto;
+  position: relative;
+}
+
+@include respond-max('xl') {
+
+  .a-container {
+    max-width: none;
+    margin: 0;
+  }
+
+}

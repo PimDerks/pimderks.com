@@ -1,0 +1,39 @@
+<header class="page-header">
+    <div class="header__logo">
+        {% if page.id == 'home' %}
+        <h1 class="logo">Pim Derks</h1>
+        {% else %}
+        <a href="/" class="logo">Pim Derks</a>
+        {% endif %}
+    </div>
+    <nav class="header__nav">
+        <h2 class="u-screenreader">Navigation</h2>
+        <ul class="a-list-bare a-list-nav">
+
+            <li>
+                {% if page.id == 'about' %}
+                <span>About</span>
+                {% else %}
+                <a href="/about/">About</a>
+                {% endif %}
+            </li>
+
+            <li>
+                {% if page.id == 'blog' %}
+                <span>Blog</span>
+                {% else %}
+                <a href="/blog/">Blog</a>
+                {% endif %}
+            </li>
+
+            <li>
+                {% if page.id == 'contact' %}
+                <span>Contact</span>
+                {% else %}
+                <a href="/contact/">Contact</a>
+                {% endif %}
+            </li>
+
+        </ul>
+    </nav>
+</header>

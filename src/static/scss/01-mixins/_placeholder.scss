@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    #PLACEHOLDER
+\*------------------------------------*/
+
+/**
+ * Prefixes placeholder-selectors.
+ * @author Pim Derks
+*/
+
+// scss-lint:disable VendorPrefixes, PseudoElement
+@mixin placeholder {
+    &::-webkit-input-placeholder { @content }
+    &:-moz-placeholder { @content }
+    &::-moz-placeholder { @content }
+    &:-ms-input-placeholder { @content }
+}
+// scss-lint:enable VendorPrefixes, PseudoElement
