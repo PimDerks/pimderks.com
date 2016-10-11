@@ -3,16 +3,16 @@ title: Blog
 permalink: /blog/
 layout: default
 id: blog
+lead: "I've always learnt a lot from other people's blogs, articles and tweets. Now I'd like to hopefully do something back, that's why I finally started writing some of my thoughts down."
 ---
 
-<p class="lead">As you might have noticed this website is not a CV. More information about projects I've worked on, work experience and education can be found on my LinkedIn profile.</p>
-<p>Right now I'm not doing any freelance work, so please only contact me if you've got a long-term opportunity for me. If you are interested in working together, let me know! I'd love to hear from you.</p>
+<p>I've never really written for an audience before, so please bear with me while I try to get better at writing. I'd love to hear what you think about my articles.</p>
 
 <h2>Most recent articles</h2>
 {% assign posts = site.posts|sort: 'date'%}
 
 <ol class="a-list-bare">
-    {% for post in site.posts|offset:1|limit:2 %}
+    {% for post in site.posts|limit:2 %}
     <li>
         <h3>
             <a href="{{ post.url}}">
@@ -25,12 +25,12 @@ id: blog
 </ol>
 
 <h2>Older postings</h2>
-<ol>
-{% for post in site.posts|offset:1 %}
+<ol class="a-list-bare">
+    {% for post in site.posts|offset:2 %}
     <li>
         <a href="{{ post.url}}">
             {{ post.title }}
         </a>
     </li>
-{% endfor %}
+    {% endfor %}
 </ol>

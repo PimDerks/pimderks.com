@@ -131,39 +131,42 @@ h2,
 h3,
 h4,
 h5 {
-
+  margin-top: baseline(1);
 }
 
 h1,
-.a-h1 {
+.u-h1 {
   @extend %h1;
 }
 
 h2,
-.a-h2 {
+.u-h2 {
   @extend %h2;
 }
 
 h3,
-.a-h3 {
+.u-h3 {
   @extend %h3;
+  color: rgba(black, .5);
 }
 
 h4,
-.a-h4 {
+.u-h4 {
   @extend %h4;
 }
 
 h5,
-.a-h5 {
+.u-h5 {
   @extend %h5;
 }
 
-p {
+p,
+.u-base {
   @extend %base;
 }
 
-small {
+small,
+.u-small {
   @extend %small;
 }
 
@@ -176,10 +179,16 @@ h5 {
 }
 
 
-h1,
-h2,
-h3{
+h1 {
   color: #eb0064;
+}
+
+h2 {
+  color: black;
+}
+
+h3 {
+  color: rgba(black, .5);
 }
 
 h1 {
@@ -194,60 +203,6 @@ h2,
   font-weight: normal;
 }
 
-h3,
-h4,
-h5,
-.a-h3,
-.a-h4,
-.a-h5 {
-}
-
-$color-h1: get-color('brand');
-$color-h2: get-color('brand');
-$color-h3: get-color('brand');
-$color-h4: get-color('brand');
-
-h1,
-.a-h1 {
-  &,
-  & a {
-    color: $color-h1;
-  }
-}
-
-h2,
-.a-h2 {
-  &,
-  & a {
-    color: $color-h2;
-  }
-}
-
-h3,
-.a-h3 {
-  &,
-  & a {
-    color: $color-h3;
-  }
-}
-
-h4,
-.a-h4 {
-  &,
-  & a {
-    color: $color-h4;
-  }
-}
-
-h5,
-.a-h5 {
-  &,
-  & a {
-    color: $color-h4;
-  }
-}
-
-
 h1,
 h2,
 h3,
@@ -258,7 +213,6 @@ h5
 .a-h3,
 .a-h4,
 .a-h5 {
-
 
   a {
     text-decoration: none;
@@ -275,8 +229,9 @@ small {
   display: block;
 }
 
+small,
 .a-small {
-  font-size: .66rem;
+
 }
 
 time {
@@ -288,29 +243,6 @@ time {
 .lead {
   font-size: 1.25rem;
   line-height: 2.5rem;
-
-  &::after {
-    background: black;
-    content: '';
-    height: 1px;
-    display: block;
-    margin: 2.4rem 0;
-    opacity: .25;
-    width: 5%;
-  }
-
-}
-
-h2,
-h3 {
-  color: black;
-  font-size: 1.25rem;
-  line-height: 1.6rem;
-}
-
-h3 {
-  font-size: 1rem;
-  margin-bottom: 0;
 }
 
 em {

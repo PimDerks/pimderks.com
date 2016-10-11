@@ -10,6 +10,10 @@
     @include respond-min('m'){
         padding-right: 25vw;
     }
+
+    @include respond-min('l'){
+        padding-right: 35vw;
+    }
 }
 
 .page-content {
@@ -44,25 +48,6 @@
     // padding-bottom: baseline(1);
 }
 
-main footer,
-.article-nav {
-
-    &::before {
-        background: black;
-        content: '';
-        height: 1px;
-        display: block;
-        margin: 2.4rem 0;
-        opacity: .25;
-        width: 5%;
-    }
-
-}
-
-
-
-
-
 header {
 
 }
@@ -71,15 +56,15 @@ header {
     background: rgba(black, .9);
 }
 
-footer ul {
+.page-footer ul {
     margin-bottom: 0;
 }
 
-footer a {
+.page-footer a {
     color: white;
 }
 
-footer li {
+.page-footer li {
     margin-right: baseline(.5);
 
     &:last-child {

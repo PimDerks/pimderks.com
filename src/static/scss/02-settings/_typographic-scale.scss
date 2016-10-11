@@ -19,7 +19,8 @@ $typographic-scales:(
     'augmented-fourth': 1.414,
     'perfect-fifth':    1.5,
     'golden-ratio':     1.618,
-    'fibonacci':        (1, 1, 2, 3, 5, 8, 13, 21)
+    'fibonacci':        (1, 1, 2, 3, 5, 8, 13, 21),
+    'custom': (.75, 1, 1.125, 1.125, 1.125, 1.5, 2.5)
 );
 
 
@@ -29,19 +30,14 @@ $typographic-breakpoints:(
     'xs':   (
         'font-size': 20,
         'line-height': 1.618,
-        'scale': map-get($typographic-scales, 'major-second')
-    ),
-    'm':    (
-        'font-size': 20,
-        'line-height': 1.618,
-        'scale': map-get($typographic-scales, 'minor-third')
-    ),
+        'scale': map-get($typographic-scales, 'custom')
+    )
 );
 
 // These should be ordered smallest to largest. The numbers are extra units of the baseline: line-height / margin-bottom
 
 $typographic-scale-names:(
-    //'xsmall',
+    // 'xsmall': (0 1),
     'small': (0 1),
     'base': (0 1),
     'h5': (0 1),

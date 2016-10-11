@@ -1,10 +1,9 @@
 ---
-title: Fronteers 2016, Day Two
+title: "Fronteers 2016: Day Two"
 date: 2016-10-06
 intro: My notes for the 2nd day of Fronteers 2016.
+lead: My notes for the 2nd day of Fronteers 2016.
 ---
-
-<p class="lead">After visiting the Jam Sessions lorem ipsum dolor sit amet.</p>
 
 ## Jason Grigsby: Adapting to Input
 - @grigs
@@ -205,10 +204,7 @@ intro: My notes for the 2nd day of Fronteers 2016.
 - Without HSTS: Redirect http to https. Costs time.
 - With HSTS: Browser goes to https by default, overrides user.
 
-## Sarah Drasner: Functional Animation
+## Remaining presentations
 
-## Bruce Lawson: ...
-
-## Leonie Watson: Technologic (Human Afterall) - Accessibility Mix
-
-## Heydon Pickering: Joining Up The Dots
+Due to the extension cords being removed at around 1PM I was
+unable to take notes for the rest of the conference.

@@ -1,10 +1,9 @@
 ---
-title: Fronteers 2016, Day One
+title: "Fronteers 2016: Day One"
 date: 2016-10-06
 intro: My notes for the 1st day of Fronteers 2016.
+lead: My notes for the 1st day of Fronteers 2016.
 ---
-
-<p class="lead">After visiting the Jam Sessions lorem ipsum dolor sit amet.</p>
 
 ## Ire Aderinokun: Progressive Enhancement and CSS
 - http://bitsofco.de since 1.5 yrs

@@ -7,6 +7,8 @@
 
 {% if currentIndex %}
 
+<hr />
+
 <nav class="article-nav">
     {% assign nextIndex = currentIndex|plus:1 %}
     {% if nextIndex >= 0 and posts[nextIndex] %}

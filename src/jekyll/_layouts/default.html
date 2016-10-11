@@ -13,9 +13,17 @@
 
     <main class="page-content">
       <h1>{{ page.title }}</h1>
+
+      {% if page.lead %}
+        <p class="lead">{{ page.lead }}</p>
+        <hr />
+      {% endif %}
+
       {{ content }}
 
       {% include components/blog-navigation.html %}
+
+      <hr />
 
       {% include components/copyright.html %}
 
@@ -28,6 +36,8 @@
   {% include layout/footer.html %}
 
 </div>
+
+</body>
 
 {% include document/document-scripts.html %}
 

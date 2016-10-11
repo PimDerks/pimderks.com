@@ -1,9 +1,11 @@
 
 hr {
-  background-color: get-color('brand');
+  background: get-color('black');
   clear: both;
   display: block;
   height: 1px;
-  margin: baseline(.5) auto;
+  margin: baseline(1.5) 0;
   border: 0;
+  opacity: .25;
+  width: 5%;
 }
