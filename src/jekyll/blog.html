@@ -9,10 +9,10 @@ lead: "I've always learnt a lot from other people's blogs, articles and tweets. 
 <p>I've never really written for an audience before, so please bear with me while I try to get better at writing. I'd love to hear what you think about my articles.</p>
 
 <h2>Most recent articles</h2>
-{% assign posts = site.posts|sort: 'date'%}
+{% assign posts = site.posts|sort: 'date'|reverse%}
 
 <ol class="a-list-bare">
-    {% for post in site.posts|limit:2 %}
+    {% for post in posts|limit:2 %}
     <li>
         <h3>
             <a href="{{ post.url}}">
@@ -26,7 +26,7 @@ lead: "I've always learnt a lot from other people's blogs, articles and tweets. 
 
 <h2>Older postings</h2>
 <ol class="a-list-bare">
-    {% for post in site.posts|offset:2 %}
+    {% for post in posts|offset:2 %}
     <li>
         <a href="{{ post.url}}">
             {{ post.title }}

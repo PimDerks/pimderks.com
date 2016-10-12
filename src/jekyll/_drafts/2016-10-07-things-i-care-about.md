@@ -1,7 +1,6 @@
 ---
 title: Things I care about
 date: 2016-10-07
-layout: post
 intro: A follow-up to my previous posting, outlining subjects I'm not that interested in.
 ---
 

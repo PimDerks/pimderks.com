@@ -1,7 +1,6 @@
 ---
 title: Things I don't care about
 date: 2016-10-05
-layout: post
 intro: Lately I've been trying to focus my efforts, instead of trying to do everything.
 ---
 

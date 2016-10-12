@@ -13,8 +13,8 @@ module.exports.copy = function(){
 
     var spawn = require('child_process').spawn;
     var tasks = ['build'];
-    if(util.env.draft){
-        tasks.push('--drafts')
+    if(util.env.drafts){
+        tasks = ['build', '--drafts'];
     }
     var jekyll = spawn('jekyll', tasks, {stdio: 'inherit'});
 
