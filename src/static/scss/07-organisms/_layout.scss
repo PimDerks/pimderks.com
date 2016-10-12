@@ -109,21 +109,21 @@ header .header__nav {
 
 }
 
-a.logo {
-    opacity: .75;
-
-    @include attention {
-        opacity: 1;
-    }
-
-}
-
 h1.logo {
     color: white;
     font-size: 1rem;
     line-height: baseline(1);
     margin: 0;
     opacity: 1;
+
+    a {
+        opacity: .75;
+
+        @include attention {
+            opacity: 1;
+        }
+    }
+
 }
 
 header a,

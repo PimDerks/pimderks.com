@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width" />
 
     <meta name="author" content="Pim Derks - @pimderks" />
-    <meta name="description" content="{{ page.lead }}" />
+    <meta name="description" content="{{ page.lead | strip_html }}" />
 
     <title>
         {% if page.title %}

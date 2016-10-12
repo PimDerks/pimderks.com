@@ -10,6 +10,7 @@
 <hr />
 
 <nav class="article-nav">
+    <h2 class="u-screenreader">Article navigation</h2>
     {% assign nextIndex = currentIndex|plus:1 %}
     {% if nextIndex >= 0 and posts[nextIndex] %}
         {% assign next = posts[nextIndex] %}
