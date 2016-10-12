@@ -12,7 +12,11 @@ var gulp = require('gulp'),
 module.exports.copy = function(){
 
     var spawn = require('child_process').spawn;
-    var jekyll = spawn('jekyll', ['build'], {stdio: 'inherit'});
+    var tasks = ['build'];
+    if(util.env.draft){
+        tasks.push('--drafts')
+    }
+    var jekyll = spawn('jekyll', tasks, {stdio: 'inherit'});
 
 };
 
