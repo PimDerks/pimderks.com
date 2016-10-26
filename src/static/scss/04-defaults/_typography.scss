@@ -252,3 +252,7 @@ em {
 li > h3 + * {
   margin-top: 0;
 }
+
+abbr[title]{
+  border-bottom: 1px dotted currentColor;
+}

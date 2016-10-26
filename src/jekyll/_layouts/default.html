@@ -17,6 +17,9 @@
       {% if page.lead %}
         <p class="lead">{{ page.lead }}</p>
         <hr />
+      {% elsif page.intro %}
+        <p class="lead">{{ page.intro }}</p>
+        <hr />
       {% endif %}
 
       {{ content }}

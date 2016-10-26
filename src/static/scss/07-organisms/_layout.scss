@@ -73,61 +73,65 @@ header {
 
 }
 
-header {
-
-}
-header .header__logo {
-    flex: 1 0 auto;
-    margin-right: baseline(.5);
-}
 
 body,
 .site {
     margin-top: 0;
 }
 
-header .header__nav {
-    flex: 0 0 auto;
-    margin-top: 0;
+.page-header {
 
-    ul {
+    a,
+    span {
+        color: white;
+        display: inline-block;
+    }
+
+    .page-header__logo {
+        flex: 1 0 auto;
+        margin-right: baseline(.5);
+
+        h1 {
+            color: white;
+            font-size: 1rem;
+            line-height: baseline(1);
+            margin: 0;
+            opacity: 1;
+
+            a {
+                color: white;
+                opacity: .75;
+
+                @include attention {
+                    opacity: 1;
+                }
+            }
+
+        }
+
+    }
+
+    .page-header__nav {
+        flex: 0 0 auto;
         margin-top: 0;
-    }
 
-    li + li {
-        margin-left: baseline(.5);
-    }
+        ul {
+            margin-top: 0;
+        }
 
-    a {
-        opacity: .75;
+        li + li {
+            margin-left: baseline(.5);
+        }
 
-        @include attention {
-            opacity: 1;
+        a {
+            opacity: .75;
+
+            @include attention {
+                opacity: 1;
+            }
+
         }
 
     }
 
-}
-
-h1.logo {
-    color: white;
-    font-size: 1rem;
-    line-height: baseline(1);
-    margin: 0;
-    opacity: 1;
-
-    a {
-        opacity: .75;
-
-        @include attention {
-            opacity: 1;
-        }
-    }
-
-}
-
-header a,
-header span {
-    color: white;
-    display: inline-block;
 }
