@@ -63,7 +63,7 @@ This way you can make sure that everyone
 
 Simple is good. UI should not be complex and should behave as expected. The less code needed, the better. Every time someone designs a custom select-box, reinvents inputs a puppy dies or tries to add something which hacks the scroll a puppy dies.
 
-It's our job as front-end developer to make sure we keep things as simple as possible. A user not being able to use your website because the "Add to cart"-button is not really a `button` but a `span` will cost you money. No-one has ever purchased
+It's our job as front-end developers to make sure we keep things as simple as possible. A user not being able to use your website because the "Add to cart"-button is not really a `button` but a `span` will cost you money. No-one has ever purchased
 something because the website had such fancy animations when scrolling down. Again - pick your battles!
 
 ## Final thoughts
